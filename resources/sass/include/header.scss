@@ -1,0 +1,46 @@
+.splitting {
+    --text-weight-min: 100;
+    --text-weight-max: 900;
+    --text-slant-min: 1;
+    --text-slant-max: 12;
+    --text-width-min: 75;
+    --text-width-max: 100;
+    --glow-hue-min: 0;
+    --glow-hue-max: 255;
+    --glow-size-min: 0;
+    --glow-size-max: 15;
+    --glow-lightness: 57%;
+    --delay: 0;
+    --duration: 3s;
+    --percent: 0;
+}
+
+.char {
+    font-stretch: var(--text-width);
+    font-style: oblique var(--text-slant);
+    font-weight: var(--text-weight);
+    animation: wave var(--duration) ease-in-out var(--delay) infinite alternate;
+    animation-fill-mode: backwards;
+    --percent: calc(var(--char-index) / var(--char-total));
+    --delay: calc(var(--percent) * var(--duration));
+    --glow-hue: calc(var(--percent) * 510);
+}
+
+.site-header {
+    background: -webkit-gradient(linear, left top, right top, from(#2e9bfc), to(#0e4e96));
+    background: linear-gradient(1350deg, #2e9bfc, #0e4e96);
+    margin-bottom: 15px;
+}
+
+.logo {
+    position: relative;
+    z-index: 123;
+    padding: 10px;
+    font: 18px verdana;
+    float: left;
+    width: 25%
+}
+
+.logo a {
+    color: lemonchiffon;
+}

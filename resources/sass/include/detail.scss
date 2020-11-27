@@ -1,0 +1,46 @@
+// detail
+.card-content {
+    .content {
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+        ul,
+        ol {
+            padding-left: 15px;
+        }
+        @include content;
+    }
+    code {
+        -webkit-text-fill-color: #333;
+        background-clip: padding-box;
+        background-color: #efeff6;
+    }
+}
+
+.cards-sidebar {
+    .post-views {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .widget-img {
+            max-width: 30%;
+            flex: 0 0 30%;
+            padding-right: 10px;
+            img {
+                max-width: 100%;
+                display: block;
+            }
+        }
+        .widget-title {
+            max-width: 70%;
+            flex: 0 0 70%;
+            a {
+                @include title();
+                font-size: 14px;
+            }
+        }
+    }
+}
+// end detaild

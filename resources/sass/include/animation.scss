@@ -1,0 +1,76 @@
+
+@-webkit-keyframes xoay {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes xoay {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes wave {
+    0% {
+        font-variation-settings: "wght"var(--text-weight-min), "wdth"var(--text-width-min), "slnt"var(--text-slant-min);
+        text-shadow: 0 0 calc(var(--glow-size-min) * 1px) hsla(var(--glow-hue), 100%, var(--glow-lightness), 1);
+    }
+    50% {
+        font-variation-settings: "wght"var(--text-weight-max), "wdth"var(--text-width-max), "slnt"var(--text-slant-max);
+        text-shadow: 0 0 calc(var(--glow-size-max) * 1px) hsla(calc(var(--glow-hue) + 255), 100%, var(--glow-lightness), 1);
+    }
+    100% {
+        font-variation-settings: "wght"var(--text-weight-min), "wdth"var(--text-width-min), "slnt"var(--text-slant-min);
+        text-shadow: 0 0 calc(var(--glow-size-min) * 1px) hsla(var(--glow-hue), 100%, var(--glow-lightness), 1);
+    }
+}
+
+@keyframes config {
+    0% {
+        transform: rotate(-333turn);
+    }
+    100% {
+        transform: rotate(333turn);
+    }
+}
+@keyframes skills {
+    0% {
+        transform: rotateY(-333turn);
+    }
+    100% {
+        transform: rotateY(333turn);
+    }
+}
+@keyframes bar {
+    0% {
+        width: calc( var(--parent)/4);
+    }
+    50% {
+        width: calc( var(--parent)/2);
+    }
+    100% {
+        width: var(--parent);
+    }
+}

@@ -1,0 +1,228 @@
+
+nav {
+    position: relative;
+    margin: 0 auto;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #head-mobile {
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#cssmenu:after,
+#cssmenu>ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+#cssmenu #head-mobile {
+    display: none
+}
+
+#cssmenu {
+    font-family: sans-serif;
+}
+
+#cssmenu>ul>li {
+    float: left
+}
+
+#cssmenu>ul>li>a {
+    padding: 17px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#cssmenu>ul>li:hover>a,
+#cssmenu ul li.active a {
+    color: #fff
+}
+
+#cssmenu>ul>li:hover,
+#cssmenu ul li.active:hover,
+#cssmenu ul li.active,
+#cssmenu ul li.has-sub.active:hover {
+    background: linear-gradient(135deg, #f5634a 30%, #fe9518 100%);
+    -webkit-transition: background .3s ease;
+    -ms-transition: background .3s ease;
+    transition: background .3s ease;
+}
+
+#cssmenu>ul>li:hover a,
+#cssmenu ul li.active:hover a,
+#cssmenu ul li.active a,
+#cssmenu ul li.has-sub.active:hover a {}
+#cssmenu>ul>li.has-sub>a {
+    padding-right: 30px
+}
+#cssmenu>ul>li.has-sub>a:after {
+    position: absolute;
+    top: 22px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #ddd;
+    content: ''
+}
+#cssmenu>ul>li.has-sub>a:before {
+    position: absolute;
+    top: 19px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #ddd;
+    content: '';
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease
+}
+#cssmenu>ul>li.has-sub:hover>a:before {
+    top: 23px;
+    height: 0
+}
+#cssmenu ul ul {
+    position: absolute;
+    left: -9999px
+}
+#cssmenu ul ul li {
+    height: 0;
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    background: linear-gradient(165deg, #f5634a 45%, #fe9518 70%);
+    transition: all .25s ease
+}
+#cssmenu ul ul li:hover {}
+
+#cssmenu li:hover>ul {
+    left: auto;
+    z-index: 10;
+}
+
+#cssmenu li:hover>ul>li {
+    height: 35px
+}
+
+#cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0
+}
+
+#cssmenu ul ul li a {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 11px 15px;
+    width: 170px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+#cssmenu ul ul li:last-child>a,
+#cssmenu ul ul li.last-item>a {
+    border-bottom: 0
+}
+
+#cssmenu ul ul li:hover>a,
+#cssmenu ul ul li a:hover {}
+
+#cssmenu ul ul li.has-sub>a:after {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #ddd;
+    content: ''
+}
+
+#cssmenu ul ul li.has-sub>a:before {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #ddd;
+    content: '';
+    -webkit-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    transition: all .25s ease
+}
+
+#cssmenu ul ul>li.has-sub:hover>a:before {
+    top: 17px;
+    height: 0
+}
+
+#cssmenu ul ul li.has-sub:hover,
+#cssmenu ul li.has-sub ul li.has-sub ul li:hover {
+    background: #363636;
+}
+
+#cssmenu ul ul ul li.active a {
+    border-left: 1px solid #333
+}
+
+#cssmenu>ul>li.has-sub>ul>li.active>a,
+#cssmenu>ul ul>li.has-sub>ul>li.active>a {
+    border-top: 1px solid #333
+}
+
+.heading {
+    background: #2e9bfc;
+    transition: all 0.25s ease;
+    font-size: 16px;
+    color: #eb3d32;
+    margin-bottom: 10px;
+    h2 {
+        height: 60px;
+        line-height: 60px;
+    }
+    span {
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        padding: 0 40px;
+        color: #FFF;
+        background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#e52e71));
+        background: linear-gradient(90deg, #ff8a00, #e52e71);
+        &::before {
+            border-bottom: 27px solid transparent;
+            border-right: 10px solid #2e9bfc;
+            border-top: 0 solid transparent;
+            border-left: 0;
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        &::after {
+            border-bottom: 0 solid transparent;
+            border-right: 10px solid #2e9bfc;
+            border-top: 27px solid transparent;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            right: 0;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+
+// page profile
+.panel-profile {
+    padding: 10px 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+    .avatar-profile {
+        padding: 15px 0px 25px;
+        .avatar {
+            max-width: 100%;
+            height: 140px;
+            display: block;
+        }
+    }
+    .list-info {
+        margin-top: 15px;
+        list-style: none;
+        padding: 0;
+        font-size: 120%;
+        li {
+            span,
+            strong {
+                @include content;
+            }
+        }
+    }
+}
+
+.panel-profile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    .title-panel {
+        h1,
+        h4,
+        h3 {
+            display: inline-block;
+            background: linear-gradient(92deg, #4d96ff 0%, #9570ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            text-shadow: none;
+        }
+    }
+    .pro-info,
+    .sumaary-profile {
+        .text,
+        p {
+            @include content;
+        }
+        .skill {
+            width: 60%;
+            margin: 14px 0;
+            .name {
+                @include content;
+                i{
+                    font-size: 24px;
+                    margin-right: 5px;
+                    animation: skills 999s;
+                    animation-iteration-count: 100;
+                    @include content;
+                }
+            }
+            .bar {
+                text-align: center;
+                vertical-align: middle;
+                height: 20px;
+                margin: 5px 0;
+                width: var(--parent);
+                background: linear-gradient(92deg, #4d96ff 0%, #9570ee 100%);
+                animation: bar 3s linear;
+            }
+        }
+    }
+    .pro-info{
+        ul{
+            display: block;
+            list-style: none;
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.border {
+    height: 1px;
+    background-color: rgba(238, 238, 238, .5);
+    width: 100%;
+    display: block;
+}
+
+.media-profile {
+    padding: 15px 0;
+}
+
+.title-profile {
+    margin: 10px 0;
+    .title {
+        display: inline-block;
+        margin: 0;
+        background: linear-gradient(92deg, #4d96ff 0%, #9570ee 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        text-shadow: none;
+    }
+}
+
+.profile-background {
+    padding: 15px;
+    background-color: #76350a;
+}

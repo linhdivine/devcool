@@ -1,0 +1,118 @@
+
+
+
+.site-footer {
+    margin-top: 15px;
+    padding: 15px 0;
+    width: 100%;
+    color: #FFF;
+    display: block;
+    background: linear-gradient(92deg, #4d96ff 0%, #9570ee 100%);
+}
+
+.logo-footer {
+    display: block;
+    padding-bottom: 35px;
+    .logo {
+        width: 100%;
+        font-size: 38px;
+        padding: 0;
+    }
+}
+
+.title-footer {
+    margin-top: 25px;
+    .title {
+        @include title();
+        margin: 0;
+    }
+}
+
+.list-contact {
+    .list {
+        list-style: none;
+        display: inline-block;
+        li {
+            line-height: 1.7;
+            font-size: 15px;
+            display: block;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.map-footer {
+    width: 100%;
+    display: block;
+    .google-map {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    a {
+        color: #fff;
+    }
+}
+.configuration-mode {
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    #setting {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        outline: none;
+        .far {
+            background: -webkit-gradient(linear, left top, right top, from(#ea531c), to(#76350a));
+            background: linear-gradient(180deg, #ea531c, #76350a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            text-shadow: none;
+            animation: config 999s;
+            animation-iteration-count: 100;
+            font-size: 36px;
+        }
+    }
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background: #00b8ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000000000;
+    display: block;
+    overflow: hidden;
+}
+
+.icon {
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+
+.xoay {
+    animation: xoay 1.5s linear infinite;
+    -moz-animation: xoay 1.5s linear infinite;
+    -ms-animation: xoay 1.5s linear infinite;
+    -o-animation: xoay 1.5s linear infinite;
+    -webkit-animation: xoay 1.5s linear infinite;
+}
+
+
